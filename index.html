@@ -40,10 +40,63 @@
 
   <!-- SECTION -->
   <main class="container">
+    <form onsubmit="app.CarsController.createHouseListing()" class="row g-4 bg-white p-4 rounded shadow-sm my-3">
+      <div>
+        <h2>List Your House</h2>
+      </div>
+      <div class="col-md-4">
+        <label for="house-year">Year</label>
+        <input required id="house-year" name="year" type="text" minlength="2" maxlength="25" class="form-control">
+      </div>
+      <div class="col-md-4">
+        <label for="house-name">Name</label>
+        <input required id="house-name" name="name" type="text" minlength="1" , maxlength="25" class="form-control">
+      </div>
+      <div class="col-md-4">
+        <label for="house-SquareFootage">Year</label>
+        <input required id="house-SquareFootage" name="Square Footage" type="number" min="0" max="5000000000"
+          class="form-control">
+      </div>
+      <div class="col-md-12">
+        <label for="house-imgUrl">Picture</label>
+        <input required id="house-imgUrl" name="imgUrl" type="url" class="form-control">
+      </div>
+      <div class="col-md-6">
+        <label for="house-bedrooms">Bedrooms</label>
+        <input required id="house-bedrooms" name="bedrooms" type="number" class="form-control">
+      </div>
+      <div class="col-md-6">
+        <label for="house-bathrooms">Bathrooms</label>
+        <input required id="house-bathrooms" name="bathrooms" type="number" min="1" max="10" class="form-control">
+      </div>
+      <!-- <div class="col-md-12">
+        <label for="car-isRunning">Is Running</label>
+        <input id="car-isRunning" name="isRunning" type="checkbox" class="form-checkbox">
+      </div> -->
+      <div class="text-end">
+        <button class="btn btn-primary" type="submit">Submit</button>
+      </div>
 
+    </form>
 
     <!-- SECTION if you are adding houses, add them here -->
+    <section id="house-listings" class="row">
+      <!-- <div class="col-md-4">
+          <div class="card shadow-sm">
+            <img class="card-img p-2"
+              src="https://images.unsplash.com/photo-1572120360610-d971b9d7767c?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="">
+            <div class="card-body">
+              <p>Year : 1974</p>
+              <p>Bedrooms : 3</p>
+              <p>Bathrooms : 2.5</p>
+              <p>Price: 375000</p>
+              <p>Description : Newly renovated mid-century modern home</p>
 
+            </div>
+          </div>
+        </div>  -->
+    </section>
 
 
 
